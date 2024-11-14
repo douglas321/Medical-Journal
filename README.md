@@ -1,2 +1,2 @@
-# Medical-Journal
-In terminal app in progress to journal and track medical instances.
+# Tic-Tac-Toe (In Progress)
+Tic-Tac-Toe game made in Javascript.
