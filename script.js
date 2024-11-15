@@ -16,6 +16,11 @@ ResetButton:
     resets game logic/board state. Mayeb just reload page? 
 */
 
+function playerMove(cell) {
+    let cellClicked = document.querySelector(`div[cellIndex='${cell}']`);
+    cellClicked.textContent = "X";
+}
+
 function reloadPage() {
     location.reload();
 }
