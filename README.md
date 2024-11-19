@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 Tic-Tac-Toe game made in Javascript.
-The purpose of this project is to learn html, CSS, and javascript basics. I am interested in learning/improving my ability to create single page applications. This basic tic-tac-toe game will be a foundation for a more complicated 3x3 tic-tac-toe game in the future (3x3 meaning 9 games of tic-tac-toe being played simultaneously).
+The purpose of this project was to learn html, CSS, and javascript basics. I am interested in learning/improving my ability to create single page applications. This basic tic-tac-toe game will be a foundation for a more complicated 3x3 tic-tac-toe game in the future (3x3 meaning 9 games of tic-tac-toe being played simultaneously).
 
 
 TODO:
