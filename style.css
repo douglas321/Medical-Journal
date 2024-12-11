@@ -1,15 +1,73 @@
-.cell {
-    width: 100px;
-    height: 100px;
-    border: 5px solid black;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#gameContainer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
 }
 
 #gameGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
     width: 300px;
-    margin: auto;
+    height: 300px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    box-shadow: 0 0 0 2px black;
+    line-height: 90px;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#gameStatus {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#resetButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #0056b3;
 }
