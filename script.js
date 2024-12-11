@@ -23,10 +23,12 @@ let gameState = [
     ['', '', ''],
     ['', '', '']
 ];
+let turnCount = 0;
 
 //main "game loop"
 //each time a cell is clicked the game iterates through it's "loop", making a move and checking for a winner.
 function playerMove(row, col, cell) {
+    turnCount += 1;
     let cellClicked = document.querySelector(`div[cellIndex='${cell}']`);
     if(!cellClicked.textContent){
         if(nextShape){
@@ -46,9 +48,10 @@ function playerMove(row, col, cell) {
         if (winner){
             statusLabel.textContent = (`${winner} Wins!`);  
             disableCells();
-        }
-
-        else {
+        } else if(turnCount >= 9){
+            statusLabel.textContent = (`Cat's Game.`);  
+            disableCells();
+        } else {
             nextShape = !nextShape;      
         }
     }      
